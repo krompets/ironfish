@@ -311,7 +311,7 @@ export class IronfishNode {
       await this.rpc.start()
     }
 
-    this.minedBlocksIndexer.start()
+    await this.minedBlocksIndexer.start()
     this.telemetry.submitNodeStarted()
   }
 
